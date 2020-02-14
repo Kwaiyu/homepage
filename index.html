@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="utf-8">
     <title>葵语的主页</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Kwaiyu/homepage@1.0/mdui/css/mdui.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Kwaiyu/homepage@1.0/assets/css/main.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Kwaiyu/homepage@1.0/assets/css/index.css">
-    <link rel="icon" href="https://cdn.jsdelivr.net/gh/Kwaiyu/homepage@1.0/assets/img/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Kwaiyu/homepage@latest/mdui/css/mdui.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Kwaiyu/homepage@latest/assets/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Kwaiyu/homepage@latest/assets/css/index.css">
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/Kwaiyu/homepage@latest/assets/img/favicon.ico">
+
     <script>
         var _hmt = _hmt || [];
-        (function() {
+        (function () {
             var hm = document.createElement("script");
             hm.src = "https://hm.baidu.com/hm.js?c8493223ca0fc5718b7da621552fdd73";
             var s = document.getElementsByTagName("script")[0];
@@ -18,41 +20,21 @@
         })();
     </script>
 </head>
+
 <body>
-<div id="search">
-    <input id="search-field" type="text" name="search-field" onkeypress="return search(event)"/>
-</div>
-<div id="rin-bg"></div>
-<main id="rin-main">
-    <div id="rin-headimg"></div>
-    <div class="rin-name">葵&nbsp;&nbsp;语</div>
-    <div class="rin-description">「记录学习，分享乐趣」</div>
-    <div class="rin-tr"></div>
-    <a class="mdui-btn mdui-btn-raised rin-btn mdui-text-capitalize" href="detaile.html">More</a>
-</main>
-<footer id="rin-footer">
-    <div>Copyright ©2020 by Lsaiah | Modified by Seirin | BG: <a href="https://www.pixiv.net/artworks/56652667" id="bg-link" target="_blank">Pixiv</a></div>
-</footer>
-<script src="https://cdn.jsdelivr.net/gh/Kwaiyu/homepage@1.0/mdui/js/mdui.min.js"></script>
-<script>
-        // Search on enter key event
-        function search(e) {
-            if (e.keyCode == 13) {
-                var val = document.getElementById("search-field").value;
-                window.open("https://google.com/search?q=" + val);
-            }
-        }
-        //Search on Spacebar and Esc key event
-        document.addEventListener("keydown", event => {
-            if (event.keyCode == 32) {          // Spacebar code to open search
-                document.getElementById('search').style.display = 'flex';
-                document.getElementById('search-field').focus();
-            } else if (event.keyCode == 27) {   // Esc to close search
-                document.getElementById('search-field').value = '';
-                document.getElementById('search-field').blur();
-                document.getElementById('search').style.display = 'none';
-            }
-        });
-</script>
+    <div id="rin-bg"></div>
+    <main id="rin-main">
+        <div id="rin-headimg"></div>
+        <div class="rin-name">葵&nbsp;&nbsp;语</div>
+        <div class="rin-description">「记录学习，分享乐趣」</div>
+        <div class="rin-tr"></div>
+        <a class="mdui-btn mdui-btn-raised rin-btn mdui-text-capitalize" href="detaile.html">More</a>
+    </main>
+    <footer id="rin-footer">
+        <div>Copyright ©2020 by Lsaiah | Modified by Seirin | BG: <a href="https://www.pixiv.net/artworks/56652667"
+                id="bg-link" target="_blank">Pixiv</a></div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/gh/Kwaiyu/homepage@latest/mdui/js/mdui.min.js"></script>
 </body>
+
 </html>
